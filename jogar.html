@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LENDAS | Em Breve</title>
+    <link rel="icon" type="image/png" href="imagens/LENDAS LOGOTIPO_ESCRITA _2.png">
+    <link rel="stylesheet" href="estilo.css">
+    <script src="mecanica.js" defer></script>
+</head>
+<body>
+    <header>
+        <span class="logo">LENDAS</span>
+        <nav>
+            <a href="jogar.html">JOGAR</a>
+            <a href="tutorial.html">TUTORIAL</a>
+            <a href="#" onclick="mensagem()">UNIVERSO</a>
+            <a href="#" onclick="mensagem()">SOBRE</a>
+        </nav>
+        <a class="home-link" href="index.html">PÁGINA PRINCIPAL</a>
+    </header>
+    <main>
+        <div class="main-content-sep">
+            <div class="main-content-form">
+                <h1>DISPONÍVEL EM BREVE</h1>
+                <p>Ficamos felizes de ver o seu interesse. Neste momento o game ainda não foi finalizado.</p>
+                <p>Estamos preparando um jogo incrível para você. Fique ligado para mais novidades!</p>
+                <p>Abaixo deixamos um formulário, preencha para ser notificado quando sair a pré-estreia:</p>
+                <form action="#" method="post">
+                  <div class="fields">
+                    <input type="text" id="campo1" name="nome" placeholder="Nome" required>
+                    <input type="email" id="campo2" name="email" placeholder="Email" required>
+                  </div>
+                  <label>Deixe uma sugestão</label>
+                  <textarea name="mensagem" id="campo3" rows="6" placeholder="Escreva aqui"></textarea>
+                  <button type="clear" onclick="limparCampos()" class="index">Registrar</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="sep">
+                <img src="imagens/icons/classificacao-12idade.png" alt="Classificação indicativa 12 anos">
+                <p>&copy; Todos os direitos reservados</p>
+                <div class="social-links">
+                    <img src="imagens/icons/icons-instagram.png" alt="Instagram">
+                    <a href="#">Instagram</a>
+                    <img src="imagens/icons/icons-facebook.png" alt="Facebook">
+                    <a href="#">Facebook</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

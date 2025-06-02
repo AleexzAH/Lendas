@@ -1,0 +1,364 @@
+
+/* ADICIONANDO NOVAS FONTES */
+@font-face {
+    font-family: 'Corpo';
+    src: url("fonts/BARKENTINA.OTF");
+}
+
+@font-face {
+    font-family: "Til";
+    src: url('fonts/Bebas_Neue/BebasNeue-Regular.ttf');
+}
+
+/*RECONFIGURANDO OS ATRIBUTOS DE TODOS OS ELEMENTOS DA PÁGINA*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/*ESTILIZANDO O CABEÇALHO*/
+header {
+    background-color: #0A0F2C;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+.home-link {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin-right: 10px;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-grow: 1;
+}
+nav a, .home-link {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: transform 0.3s, color 0.3s;
+}
+nav a:hover, .home-link:hover{
+    transform: scale(1.2);
+    color: gold;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* IMAGEM DE FUNDO E BOTÃO PRINCIPAL*/
+
+.back_fundo_p {
+    height: 600px;
+    background: url("imagens/fundo_principal.png") no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 95%;
+}
+.back_fundo_p img {
+    width: 350px;
+    margin-bottom: 25px;
+    margin-top: 95px;
+}
+
+.botao_aprend {
+    display: block;
+    background-color: gold;
+    color: black;
+    font-size: 20px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+.botao_aprend:hover {
+    background-color: darkgoldenrod;
+    transform: scale(1.1);
+}
+
+
+
+/* SESSÃO DE CONTEÚDO */
+.conteudo_principal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: #f4f4f4;
+   
+}
+.texto_cont_p {
+    width: 50%;
+    padding: 20px;
+}
+.texto_cont_p h2 {
+    color: #0A0F2C;
+    font-size: 48px;
+    font-family: 'Til';
+    font-weight: normal;
+}
+.texto_cont_p p {
+    font-size: 28px;
+    color: #333;
+    font-family: 'Corpo';
+    margin-top: -20px;
+}
+.imagem_cont_p {
+    width: 20%;
+    text-align: center;
+}
+.imagem_cont_p img {
+    max-width: 100%;
+    height: auto;
+}
+/* TEXTO FINAL E BOTÃO */
+.centralizar_texto {
+    text-align: center;
+    padding: 50px;
+    background-color: #f4f4f4;
+}
+.centralizar_texto h2 {
+    font-size: 28px;
+    color: #0A0F2C;
+
+}
+.botao_compra{
+    background-color: gold;
+    color: black;
+    font-size: 20px;
+    padding: 25px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+.botao_compra:hover{
+    background-color: darkgoldenrod;
+    transform: scale(1.1);
+}
+
+
+/* RODAPÉ */
+
+footer {
+    background-color: #0A0F2C;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    height: 400px;
+}
+
+footer p {
+    font-size: 20px;
+}
+
+footer .sep {
+    margin-top: 65px;
+}
+.footer-content img {
+    max-width: 150px;
+    margin-bottom: 10px;
+}
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+}
+.social-links img {
+    width: 44px;
+    height: 44px;
+}
+.social-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+/* ESTILO DA PÁGINA JOGAR */
+.main-content-sep {
+    margin: 30px 0;
+}
+.main-content-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 5px;
+  }
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  p {
+    margin-bottom: 15px;
+    line-height: 1.5;
+  }
+  /* Estilização dos campos de Nome e Email lado a lado */
+  .fields {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  .fields input {
+    flex: 1;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+  }
+  /* Estilização do textarea */
+  textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    resize: vertical;
+  }
+  /* Botão de envio */
+  .index {
+    font-size: 1rem;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    background-color: gold;
+    color: black;
+    font-size: 20px;
+    padding: 25px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+  }
+  .index:hover {
+    background-color: darkgoldenrod;
+    transform: scale(1.1);
+  }
+
+
+
+  /*ESTILIZANDO PÁGINA DE TUTORIAL */
+
+  body{
+    background-color: #f5f5f5;
+  }
+
+  .tutorial {
+    display: flex;
+    flex-direction: column;
+    align-items: first baseline;
+    justify-content: center;
+    height: auto;
+    background-color: #f5f5f5;
+    padding-left: 10%;
+    margin-bottom: 50px;
+}
+.div_principal {
+    position: relative;
+    width: 80%;
+    margin: 10px;
+}
+.menu {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    gap: 10px;
+
+}
+.menu button {
+    width: auto;
+    height: 52px;
+    padding: 6px;
+    border-top: 2px solid #ccc;
+    border-left: 2px solid #ccc;
+    border-right: 2px solid #ccc;
+    cursor: pointer;
+    background-color: #f5f5f5;
+    color: gold;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+.menu button.active {
+    width: 180px;
+    padding: 8px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+.content-box {
+    width: 100%;
+    height: 90%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: 18px;
+    font-weight: bold;
+    border: 2px solid #ccc;
+    margin-top: 45px;
+    position: relative;
+    padding: 20px;
+    transition: background-color 0.3s ease;
+    text-align: left;
+}
+.content-box img {
+    width: 200px;
+    height: auto;
+    margin: 10px 0;
+}
+
+.content-box p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: normal;   
+}
+
+.content-box h2 {
+    font-family: 'Til';
+    font-size: 40px;
+    margin-bottom: 0px;
+    color: #0A0F2C;   
+}
+
+.tutorial h1 {
+    font-size: 82px;
+    font-family: 'Til';
+    margin-bottom: 0px;
+    margin-top: 10px;
+    color: #0A0F2C;
+    
+}
+.tutor{
+    font-size: 18px;
+    font-family: 'Corpo';
+    margin-top: 0px;
+}
+
+.img-tutorial{
+    align-content: center;
+}

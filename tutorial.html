@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LENDAS | Tutorial</title>
+    <link rel="icon" type="image/png" href="imagens/LENDAS LOGOTIPO_ESCRITA _2.png">
+    <link rel="stylesheet" href="estilo.css">
+    <script src="mecanica.js" defer></script>
+
+    <style>
+        
+    </style>
+</head>
+<body>
+
+
+    <header>
+        <span class="logo">LENDAS</span>
+        <nav>
+            <a href="jogar.html">JOGAR</a>
+            <a href="tutorial.html">TUTORIAL</a>
+            <a href="#" onclick="mensagem()">UNIVERSO</a>
+            <a href="#" onclick="mensagem()">SOBRE</a>
+        </nav>
+        <a class="home-link" href="index.html">PÁGINA PRINCIPAL</a>
+    </header>
+
+
+    <main class="tutorial">
+        <h1>Tutorial</h1>
+        <p class="tutor">Seja bem-vindo ao tutorial de LENDAS! Aqui você aprenderá tudo o que precisa saber para se tornar um mestre do jogo.</p>
+        <div class="div_principal">
+            <div class="menu">
+                <button onclick="changeContent(0)" class="active">Entenda o jogo</button>
+                <button onclick="changeContent(1)">Antes de começar</button>
+                <button onclick="changeContent(2)">Durante a partida</button>
+                <button onclick="changeContent(3)">Monstros e personagens</button>
+            </div>
+            <div class="content-box" id="content">
+                <h2>TÍTULOS AQUI</h2>
+                <p>CONTEÚDO AQUI</p>
+                <img src="IMAGEM AQUI" alt="TEXTO PARA A IMAGEM AQUI" calss="img-tutorial">
+                <p>CONTEÚDO AQUI</p>
+            </div>
+        </div>
+
+
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="sep">
+                <img src="imagens/icons/classificacao-12idade.png" alt="Classificação indicativa 12 anos">
+                <p>&copy; Todos os direitos reservados</p>
+                <div class="social-links">
+                    <img src="imagens/icons/icons-instagram.png" alt="Instagram">
+                    <a href="#">Instagram</a>
+                    <img src="imagens/icons/icons-facebook.png" alt="Facebook">
+                    <a href="#">Facebook</a>
+                </div>
+            </div>
+        </div>
+    </footer>

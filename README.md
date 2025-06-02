@@ -1,9 +1,9 @@
 # 🃏 Lendas — Jogo de Cartas Estratégico
 
-###Autor: Alexander Henrique
+### Autor: Alexander Henrique
 
-##Acesse o site aqui:
-##
+## Acesse o site aqui:
+## 
 
 **Lendas** é um jogo de cartas original com foco em estratégia, personagens únicos e magias poderosas. Cada personagem possui um conjunto exclusivo de 25 cartas de magia, oferecendo possibilidades únicas de jogo e permitindo combinações que desafiam o raciocínio e a criatividade dos jogadores.
 

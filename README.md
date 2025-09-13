@@ -24,13 +24,6 @@ O jogo ainda está em construção e novas funcionalidades são adicionadas cons
 
 Criar uma experiência imersiva e estratégica, onde cada decisão do jogador pode alterar o rumo da batalha. *Lendas* não é só um jogo de cartas — é um duelo entre mentes criativas.
 
-## 📌 Futuras Implementações
-
-- Interface gráfica (front-end)
-- Sistema multiplayer
-- Inteligência artificial para partidas solo
-- Animações e efeitos visuais para magias
-
 ## 📂 Estrutura do Repositório
 - Página principal de venda e prospecção
 - Página de tutorial

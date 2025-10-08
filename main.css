@@ -270,7 +270,7 @@
 /*REPOSIVIDADE */
 @media (max-width: 750px) {
     #carousel-imagens {
-        max-width: fit-content;
+        max-width: 100%;
     }
     .img-p {
         max-height: 200px;

@@ -1,84 +1,268 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> LENDAS | Home</title>
-    <link rel="icon" type="image/png" href="imagens/LENDAS LOGOTIPO_ESCRITA _2.png">
-    <link rel="stylesheet" href="estilo.css">
-    <script src="mecanica.js" defer></script>
+    <title>Lendas | Home</title>
+    <link rel="icon" type="image/png" href="imagens/LENDAS LOGOTIPO_ESCRITA.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="main.css">
+    
 </head>
 <body>
-
-    <header>
-        <span class="logo">LENDAS</span>
-        <nav>
-            <a href="jogar.html">JOGAR</a>
-            <a href="tutorial.html">TUTORIAL</a>
-            <a href="#" onclick="mensagem()">UNIVERSO</a>
-            <a href="#" onclick="mensagem()">SOBRE</a>
-        </nav>
-        <a class="home-link" href="index.html">PÁGINA PRINCIPAL</a>
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="menu">
+        <div class="container">
+            <h1 class="titulo-menu m-0"> <a href="index.html">LENDAS</a> </h1>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-center" id="menu-navegacao">
+                <ul class="nav nav-ul nav-pills d-block d-md-flex">
+                    <li class="nav-item">
+                        <a href="jogar.html" class="nav-link"> 
+                            JOGAR
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="tutorial.html" class="nav-link">  
+                            TUTORIAL
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" onclick="mensagem()" class="nav-link"> 
+                            UNIVERSO
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" onclick="mensagem()" class="nav-link"> 
+                            SOBRE
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <div class="back_fundo_p">
-        <img src="imagens/LENDAS LOGOTIPO_ESCRITA.png"> 
-        <a href="tutorial.html">
-        <button class="botao_aprend">APRENDA JOGAR</button>
-        </a>
-    </div>
-
-
-    <section class="conteudo_principal">
-        <div class="texto_cont_p">
-            <h2>Entre no campo de batalha!</h2>
-            <p>Escolha seu personagem, monte sua estratégia e vença em duelos eletrizantes! Torne-se uma verdadeira lenda.</p>
-        </div>
-        <div class="imagem_cont_p">
-            <img src="imagens/arque.png" alt="Imagem do campo de batalha">
-        </div>
-    </section>
-    <section class="conteudo_principal">
-        <div class="imagem_cont_p">
-            <img src="imagens/mago.png" alt="Imagem de um mago flutuando">
-        </div>
-        <div class="texto_cont_p">
-            <h2>Estratégia e ação em cada jogada!</h2>
-            <p>Controle seu personagem, use habilidades poderosas e derrote seu adversário. Pronto para o desafio?</p>
-        </div>
-    </section>
-    <section class="conteudo_principal">
-        <div class="texto_cont_p">
-            <h2>Monstros, magia e duelos!</h2>
-            <p>Cada batalha é única. Vença desafios, derrote criaturas e use seus poderes para dominar o campo de batalha.</p>
-        </div>
-        <div class="imagem_cont_p">
-            <img src="imagens/monstro.png" alt="Imagem de um monstro">
+    <section id="carousel-imagens">
+        <div class="carousel slide " data-bs-ride="carousel" id="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <img src="/imagens/fundo_principal.png" class="img-p" alt="Arte do jogo Lendas com Fleya">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="/imagens/fundo_principal_invertido.png" class="img-p" alt="Arte do jogo Lendas com Fleya">
+                </div>
+            </div>
+                <div class="logo-button">
+                    <img src="/imagens/LENDAS LOGOTIPO_ESCRITA.png" class="mb-md-5">
+                    <a href="tutorial.html">
+                        <button>APRENDA JOGAR</button>
+                    </a>
+                </div>
+            <button class="carousel-control-prev" data-bs-target="#carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" data-bs-target="#carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+            </div>
         </div>
     </section>
-    <div class="centralizar_texto">
-        <h2>O DESTINO ESTÁ EM SUAS MÃOS</h2>
-        <a href="jogar.html">
-        <button class="botao_compra">COMPRE O JOGO</button>
-        </a>
-    </div>
-
-
+    <section class="principal">
+        <div class="container">
+            <div class="row l-principal">
+                <div class="col-md-8 col-11 c-principal">
+                    <h2>Entre no campo de batalha!</h2>
+                    <p>Escolha seu personagem, monte sua estratégia e vença em duelos eletrizantes! Torne-se uma verdadeira lenda.</p>
+                </div>
+                <div class="col-md-3 ci-principal d-none-cel">
+                    <img src="imagens/arque.png" alt="Uma arqueira"/>
+                </div>
+            </div>
+            <div class="row l-principal">
+                <div class="col-md-3 col-10 ci-principal d-none-cel">
+                    <img src="imagens/mago.png" alt="Imagem de um mago flutuando">
+                </div>
+                <div class="col-md-8 col-11 c-principal">
+                    <h2>Estratégia e ação em cada jogada!</h2>
+                    <p>Controle seu personagem, use habilidades poderosas e derrote seu adversário. Pronto para o desafio?</p>
+                </div>
+            </div>
+            <div class="row l-principal">
+                <div class="col-md-8 col-11 c-principal">
+                    <h2>Monstros, magia e duelos!</h2>
+                    <p>Cada batalha é única. Vença desafios, derrote criaturas e use seus poderes para dominar o campo de batalha.</p>
+                </div>
+                <div class="col-md-3 ci-principal">
+                    <img src="imagens/monstro.png" alt="Uma arqueira"/>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="cards">
+        <div class="">
+            <div class="row justify-content-center">
+                <div class="col-md-3 col-8 card-item">
+                    <img class="img-card" src="/imagens/magias.png" />
+                    <h5 class="mt-3">+250 habilidades diferentes</h5>
+                    <p>Monte seu arsenal de cartas mágicas e vença os duelos</p>
+                </div>
+                <div class="col-md-3 col-8 card-item">
+                    <img class="img-card" src="/imagens/dragao_fogo.png" />
+                    <h5 class="mt-3">Vários modos de jogo</h5>
+                    <p>Seja no 1v1, 2v2 ou o modo história, aqui você joga do seu jeito!</p>
+                </div>
+                <div class="col-md-3 col-8 card-item">
+                    <img class="img-card mt" src="/imagens/maga_elfa.png" />
+                    <h5 class="mt-3">Personagens únicos</h5>
+                    <p>Controle as lendas do universo de A Primeira Ruína e sinta-se parte da aventura</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="selecao-heroi" class="pt-md-5 pb-md-5">
+        <div class="container">
+            <div class="row">
+                <h2 class="text-center mb-3 titulo">
+                    ALGUNS PERSONAGENS
+                </h2>
+            </div>
+            <div class="row aling justify-content-center">
+                <aside class="col-md-1 col-12">
+                    <nav class="nav justify-content-center nav-buttons-h gap-2">
+                        <button type="button" data-bs-toggle="tab" data-bs-target="#ray" class="btn-abas fw-bold active">
+                            <img src="imagens/runas.jpg" class="seletor">   
+                            <p>Ray</p>                     
+                        </button>
+                        <button type="button" data-bs-toggle="tab" data-bs-target="#fleya" class="btn-abas fw-bold">
+                            <img src="imagens/fleya.jpg" class="seletor">   
+                            <p>Fleya</p>
+                        </button>
+                        <button type="button" data-bs-toggle="tab" data-bs-target="#greens" class="btn-abas fw-bold">
+                            <img src="imagens/greens.jpg" class="seletor">   
+                            <p>Greens</p>
+                        </button>
+                    </nav>
+                </aside>
+                <div class="col-md-10">
+                    <div class="tab-content tc-r">
+                        <div class="tab-pane active" id="ray">
+                            <div class="row">
+                                <div class="col-md-1">
+                                    <img src="/imagens/arque.png" class="heroi"/>
+                                </div>
+                                <div class="col-md-10 c-heroi">
+                                    <div class=" conteudo-heroi">
+                                        <h5 class=" fw-bold mt-2">Aura do Arcano</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut corrupti soluta voluptatum sunt illum esse, voluptates minima. Dignissimos voluptatibus tempora eius a molestiae, libero architecto. Eius in officia nemo suscipit?</p>
+                                        <div class="habilidades">
+                                            <h5>Habilidades populares</h5>
+                                            <img src="/imagens/dragao_fogo.png" class="img-habilidades"/>
+                                            <img src="/imagens/dragao_fogo.png" class="img-habilidades ih-mid"/>
+                                            <img src="/imagens/dragao_fogo.png" class="img-habilidades"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="fleya">
+                            <div class="row">
+                                <div class="col-md-1">
+                                    <img src="/imagens/mago.png" class="heroi"/>
+                                </div>
+                                <div class="col-md-10 c-heroi">
+                                    <div class=" conteudo-heroi">
+                                        <h5 class=" fw-bold mt-2">Aura do Arcano</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut corrupti soluta voluptatum sunt illum esse, voluptates minima. Dignissimos voluptatibus tempora eius a molestiae, libero architecto. Eius in officia nemo suscipit?</p>
+                                        <div class="habilidades">
+                                            <h5>Habilidades populares</h5>
+                                            <img src="/imagens/maga-floresta.jpg" class="img-habilidades"/>
+                                            <img src="/imagens/maga-floresta.jpg" class="img-habilidades ih-mid"/>
+                                            <img src="/imagens/maga-floresta.jpg" class="img-habilidades"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="greens">
+                            <div class="row">
+                                <div class="col-md-1">
+                                    <img src="/imagens/monstro.png" class="heroi"/>
+                                </div>
+                                <div class="col-md-10 c-heroi">
+                                    <div class=" conteudo-heroi">
+                                        <h5 class=" fw-bold mt-2">Aura do Arcano</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut corrupti soluta voluptatum sunt illum esse, voluptates minima. Dignissimos voluptatibus tempora eius a molestiae, libero architecto. Eius in officia nemo suscipit?</p>
+                                        <div class="habilidades">
+                                            <h5>Habilidades populares</h5>
+                                            <img src="/imagens/magias.png" class="img-habilidades"/>
+                                            <img src="/imagens/magias.png" class="img-habilidades ih-mid"/>
+                                            <img src="/imagens/magias.png" class="img-habilidades"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="s-compra">
+            <h2 class="titulo">O DESTINO ESTÁ EM SUAS MÃOS</h2>
+            <a href="jogar.html">
+                <button class="botao_compra">COMPRE O JOGO</button>
+            </a>
+        </div>
+    </section>
     <footer>
-        <div class="footer-content">
-            <div class="sep">
-                <img src="imagens/icons/classificacao-12idade.png" alt="Classificação indicativa 12 anos">
-                <p>&copy; Todos os direitos reservados</p>
-                <p>Criado por: Alexander Henrique | Artes: Uriel Pinheiro</p>
-                <div class="social-links">
-                    <img src="imagens/icons/icons-instagram.png" alt="Instagram">
-                    <a href="#">Instagram</a>
-                    <img src="imagens/icons/icons-facebook.png" alt="Facebook">
-                    <a href="#">Facebook</a>
+        <div class="rodape">
+            <div class="row pt-3">
+                <div class="col-md-6 c-desenvolvedor">
+                    <h2>DESENVOLVEDOR</h2>
+                    <h3>Alexander Henrique</h3>
+                    <div class="social-links s-l-d">
+                        <a href=""><i class="bi bi-envelope"></i></a>
+                        <a href=""><i class="bi bi-linkedin"></i></a>
+                        <a href=""><i class="bi bi-instagram"></i></a>
+                        <a href=""><i class="bi bi-github"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 c-artes">
+                    <h2>ARTES E DESIGN</h2>
+                    <h3>Uriel Pinheiro</h3>
+                    <div class="social-links">
+                        <a href=""><i class="bi bi-envelope"></i></a>
+                        <a href=""><i class="bi bi-linkedin"></i></a>
+                        <a href=""><i class="bi bi-instagram"></i></a>
+                        <a href=""><i class="bi bi-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-3">
+                <div class="col-md-12 ci">
+                    <div class="classificacao-idade">
+                        <img src="/imagens/icons/classificacao-12idade.png" alt="Logo de classificação de idade recomendada para 12 anos"/>
+                        <ul>
+                            <li>Violência</li>
+                            <li>Conteúdo sexual</li>
+                            <li>Linguagem imprópria</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 copy-rith">
+                    <p>&copy; Todos os direitos reservados 2025 | A.H.S</p>
                 </div>
             </div>
         </div>
     </footer>
-
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="mecanica.js" defer></script>
 </body>
 </html>

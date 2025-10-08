@@ -1,0 +1,387 @@
+
+.borderr {
+    border: 1px solid red;
+}
+
+/* ADICIONANDO NOVAS FONTES */
+@font-face {
+    font-family: 'Corpo';
+    src: url("fonts/BARKENTINA.OTF");
+}
+
+@font-face {
+    font-family: "Til";
+    src: url('fonts/Bebas_Neue/BebasNeue-Regular.ttf');
+}
+
+.titulo {
+    font-family: 'Til', 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+}
+.texto {
+    font-family: 'Corpo', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/*ESTILO DO HEADER*/
+.navbar {
+    background-color: #0A0F2C;
+}
+.nav-ul {
+    gap: 50px;
+}
+.nav-item a, .titulo-menu {
+    color: #fff;
+}
+.titulo-menu {
+    font-size: 28px;
+}
+.titulo-menu a {
+    text-decoration: none;
+    color: #fff;
+}
+.nav-item a {
+    transition: transform 0.3s, color 0.3s;
+    font-size: 18px;
+}
+.nav-item a:hover, .titulo-menu a:hover {
+    color: gold;
+    transform: scale(1.2);
+}
+.navbar-toggler {
+    background-color: #fff;
+    font-size: 12px;
+}
+
+/*ESTILO DO CAROUSEL*/
+.img-p {
+    max-height: 600px;
+    min-width: 100%;
+    object-fit: cover;
+}
+.logo-button {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 100%;
+    top: 100px;
+    left: 39%;
+    text-align: center;
+}
+.logo-button img {
+    max-width: 350px;
+}
+.logo-button a button, .s-compra a button {
+    background-color: gold;
+    color: black;
+    font-size: 20px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+.logo-button a button:hover, .s-compra a button:hover {
+    background-color: darkgoldenrod;
+    transform: scale(1.1);
+}
+.carousel-imagens {
+    position: relative;
+}
+
+/* ESTILO DO CONTEÚDO PRINCIPAL*/
+.l-principal {
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+}
+.ci-principal img {
+    width: 290px;
+    max-height: 330px;
+}
+.c-principal h2 {
+    color: #0A0F2C;
+    font-size: 46px;
+    font-weight: normal;
+    font-family: 'Til';
+}
+.c-principal p {
+    font-size: 26px;
+    color: #333;
+    font-family: 'Corpo';
+    padding: 10px 0;
+}
+
+/*ESTILO DOS CARDS*/
+.cards {
+    margin: 30px 0px;
+    padding: 20px 0px;
+    background-color: #adadad7a;
+    clip-path: polygon(50% 6%, 100% 0, 100% 100%, 0 100%, 0 0);
+}
+.img-card {
+    width: 200px;
+    clip-path: circle(50% at 50% 50%);
+    height: 200px;
+    object-fit: cover;
+}
+.card-item {
+    text-align: center;
+    padding: 20px;
+    width: 360px;
+    margin: 0 10px;
+}
+/* ESTILO DOS HERÓIS */
+#selecao-heroi {
+    margin-bottom: 30px;
+}
+#selecao-heroi h2 {
+    font-size: 50px;
+    color: #0A0F2C;
+}
+.c-heroi {
+    width: 90%;
+    min-height: 200px;
+    clip-path: polygon(0 0, 100% 0%, 86% 100%, 0% 100%);
+    background-color: #ecececff;
+}
+.btn-abas {
+    font-size: 15px;
+    height: 70px;
+    width: 100%;
+    border-radius: 50%;
+    border: 1px solid rgba(218, 165, 32, 0);
+    background-color: transparent;
+    color: rgb(31, 123, 243);
+}
+/*.nav-buttons-h{
+    display: grid;
+    grid-template-columns: repeat(3, 20%);
+}*/
+.conteudo-heroi {
+    margin: 0px 30px 15px 150px;
+    width: 70%;
+}
+.heroi {
+    position: absolute;
+    width: 230px;
+    z-index: 1;
+    top: 5%;
+    left: 0%;
+    max-height: 230px;
+}
+.tc-r {
+    position: relative;
+}
+.img-habilidades {
+    width: 100px;
+    clip-path: circle(50% at 50% 50%);
+    max-height: 100px;
+}
+.ih-mid {
+    margin: 0px 20px;
+}
+.seletor {
+    width: 40px;
+    max-height: 40px;
+    clip-path: circle(50% at 50% 50%);
+}
+.aling {
+    align-items: center;
+}
+/*ESTILO SESSÃO DE COMPRA*/
+
+.s-compra {
+    width: 100%;
+    text-align: center;
+    padding: 40px 0px;
+    background-color: #141d50;
+    color: #fff;
+}
+.s-compra button {
+    margin-top: 20px;
+}
+/*ESTILO DO RODAPÉ*/
+.rodape {
+    background-color: #0A0F2C;
+    color: #a3a3a3;
+    text-align: center;
+    padding-top: 20px;
+}
+.c-desenvolvedor {
+    text-align: end;
+    padding-right: 30px;
+}
+.c-artes {
+    text-align: start;
+    padding-left: 30px;
+}
+.c-desenvolvedor h2, .c-artes h2{
+    font-size: 20px;
+}
+.c-desenvolvedor h3, .c-artes h3 {
+    font-size: 15px;
+}
+.social-links {
+    display: grid;
+    grid-template-columns: repeat(4, 5%);
+    gap: 10px;
+}
+.social-links i {
+     color: #a3a3a3;
+     font-size: 18px;
+     transition: transform 0.3s, color 0.3s;
+}
+.social-links i:hover {
+    color: gold;
+}
+.s-l-d {
+    justify-content: end;
+}
+.classificacao-idade {
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    background-color: #33333375;
+    width: 320px;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 20px 0px;
+}
+.classificacao-idade img {
+    width: 100px;
+}
+.classificacao-idade ul li {
+    list-style: none;
+    text-align: start;
+    font-size: 15px;
+}
+.classificacao-idade ul {
+    align-content: center;
+}
+.ci {
+    width: 100%;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+}
+.copy-rith {
+    margin-top: 20px;
+}
+
+/*REPOSIVIDADE */
+@media (max-width: 750px) {
+    #carousel-imagens {
+        max-width: fit-content;
+    }
+    .img-p {
+        max-height: 200px;
+    }
+    .logo-button {
+        top: 30px;
+        left: 30%;
+        text-align: center;
+    }
+    .logo-button img {
+        width: 150px;
+    }
+    .logo-button a button, .s-compra a button{
+        font-size: 10px;
+        padding: 10px;
+        margin: 10px 0px;
+    }
+    .carousel-indicators {
+        display: none;
+    }
+    .c-principal h2, .s-compra h2 {
+        font-size: 25px;
+    }
+    .c-principal p, .card-item p {
+        font-size: 15px;
+        padding: 0;
+    }
+    .ci-principal img {
+        display: block;
+        width: 230px;
+        height: auto;
+        margin: 0 auto;
+    }
+    .d-none-cel {
+        display: none;
+    }
+    .l-principal {
+        height: auto;
+        margin: 20px 0px;
+    }
+    .cards {
+        clip-path: polygon(50% 0%, 100% 0, 100% 100%, 0 100%, 0 0);
+    }
+    .img-card {
+        width: 100px;
+        height: 100px;
+    }
+    .card-item h5 {
+        font-size: 16px;
+    }
+    .card-item {
+        padding: 10px 0px;
+        width: 80%;
+    }
+    #selecao-heroi h2 {
+        font-size: 25px;
+        padding-top: 10px;
+    }
+    .nav-buttons-h{
+        display: grid;
+        grid-template-columns: repeat(3, 20%);
+    }
+    .btn-abas {
+        font-size: 10px;
+    }
+    .habilidades {
+        display: none;
+    }
+    .conteudo-heroi {
+        margin: 0px 30px 15px 120px;
+        width: 65%;
+    }
+    .heroi {
+        width: 130px;
+        left: -4%;
+        top: 25%;
+        max-height: 130px;
+    }
+    .c-heroi {
+        clip-path: none;
+        width: 100%;
+        padding: 10px;
+    }
+    #selecao-heroi {
+        margin-bottom: 0;
+    }
+    .s-compra {
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+    .c-desenvolvedor, .c-artes {
+        text-align: center;
+        padding: 5px 0px;
+    }
+    .c-artes {
+        margin-top: 10px;
+    }
+    .c-desenvolvedor h2, .c-artes h2{
+        font-size: 20px;
+    }
+    .c-desenvolvedor h3, .c-artes h3 {
+        font-size: 15px;
+    }
+    .social-links i {
+        color: #a3a3a3;
+        font-size: 18px;
+    }
+    .s-l-d {
+        justify-content: center;
+    }
+    .c-artes .social-links {
+        justify-content: center;
+    }
+}

@@ -1,8 +1,3 @@
-
-.borderr {
-    border: 1px solid red;
-}
-
 /* ADICIONANDO NOVAS FONTES */
 @font-face {
     font-family: 'Corpo';
@@ -20,6 +15,9 @@
 }
 .texto {
     font-family: 'Corpo', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body {
+    overflow-x: hidden;
 }
 
 /*ESTILO DO HEADER*/
@@ -52,7 +50,7 @@
     font-size: 12px;
 }
 
-/*ESTILO DO CAROUSEL*/
+/*ESTILO DO BANNER*/
 .img-p {
     max-height: 600px;
     min-width: 100%;
@@ -62,7 +60,7 @@
     position: absolute;
     display: grid;
     grid-template-columns: 100%;
-    top: 100px;
+    top: 180px;
     left: 39%;
     text-align: center;
 }
@@ -83,8 +81,9 @@
     background-color: darkgoldenrod;
     transform: scale(1.1);
 }
-.carousel-imagens {
+.banner {
     position: relative;
+    height: auto;
 }
 
 /* ESTILO DO CONTEÚDO PRINCIPAL*/
@@ -116,6 +115,9 @@
     padding: 20px 0px;
     background-color: #adadad7a;
     clip-path: polygon(50% 6%, 100% 0, 100% 100%, 0 100%, 0 0);
+}
+.section-cards {
+    margin-top: 20px;
 }
 .img-card {
     width: 200px;
@@ -152,10 +154,6 @@
     background-color: transparent;
     color: rgb(31, 123, 243);
 }
-/*.nav-buttons-h{
-    display: grid;
-    grid-template-columns: repeat(3, 20%);
-}*/
 .conteudo-heroi {
     margin: 0px 30px 15px 150px;
     width: 70%;
@@ -164,7 +162,7 @@
     position: absolute;
     width: 230px;
     z-index: 1;
-    top: 5%;
+    top: 10%;
     left: 0%;
     max-height: 230px;
 }
@@ -269,14 +267,17 @@
 
 /*REPOSIVIDADE */
 @media (max-width: 750px) {
-    #carousel-imagens {
+    #banner {
         max-width: 100%;
+        position: relative;
     }
     .img-p {
         max-height: 200px;
+        overflow-x: hidden;
+        max-width: 100%;
     }
     .logo-button {
-        top: 30px;
+        top: 20px;
         left: 30%;
         text-align: center;
     }
@@ -287,9 +288,6 @@
         font-size: 10px;
         padding: 10px;
         margin: 10px 0px;
-    }
-    .carousel-indicators {
-        display: none;
     }
     .c-principal h2, .s-compra h2 {
         font-size: 25px;
@@ -340,13 +338,20 @@
         display: none;
     }
     .conteudo-heroi {
-        margin: 0px 30px 15px 120px;
+        margin: 10px 95px;
         width: 65%;
+        min-height: 180px;
+    }
+    .conteudo-heroi p {
+        font-size: 3vw;
+    }
+    .conteudo-heroi h5 {
+        font-size: 4vw;
     }
     .heroi {
-        width: 130px;
-        left: -2%;
-        top: 25%;
+        width: 110px;
+        left: -5%;
+        top: 20%;
         max-height: 130px;
     }
     .c-heroi {

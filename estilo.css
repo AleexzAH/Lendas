@@ -62,11 +62,11 @@
     border-radius: 3px;
     cursor: pointer;
     display: block;
-    margin: 0 auto;
+    margin: 20px  auto;
     background-color: gold;
     color: black;
     font-size: 20px;
-    padding: 25px 30px;
+    padding: 15px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -178,5 +178,58 @@
 }
 
 .img-tutorial{
-    align-content: center;
+    width: 350px;
+  }
+
+.content-img {
+  width: 100%;
+  margin: 20px 0;
+  text-align: center;
+}
+
+@media (max-width: 745px){
+  .tutorial {
+    min-width: 80%;
+    overflow-x: hidden;
+    padding: 10px;
+    margin: 0 auto;
+  }
+  .tutorial h1 {
+    font-size: 12vw;
+  }
+  .tutorial p {
+    font-size: 4vw;
+  } 
+  .div_principal {
+    min-width: 100%;
+    overflow-x: hidden;
+    padding: 5px;
+    margin: 0 auto;
+  }
+  .menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .content-box {
+    margin-top: 120px;
+  }
+  .content-box p {
+    font-size: 4vw;
+  }
+  .content-box h2 {
+    font-size: 7vw;
+  }
+  .img-tutorial {
+    width: 80px;
+  }
+  .fields {
+    display: block;
+  }
+  .fields input {
+    width: 100%;
+    margin: 10px 0;
+  }
+  .index {
+    padding: 10px 15px;
+  }
 }

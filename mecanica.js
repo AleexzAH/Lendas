@@ -22,7 +22,7 @@ const contents = [
         Cada um escolhe um personagem que tem um baralho de cartas com poderes especiais. Seu objetivo é usar estratégia, magia e ataques para zerar a vida do adversário e vencer a partida! Mas cuidado: desafios inesperados podem surgir, então prepare-se para pensar rápido e planejar bem seus movimentos. <br>
         Baseado no universo de Beroline, um RPG de mesa único, Lendas trará os personagens da franquia deste universo. Agora você pode controlar as lendas de Beroline como seu personagem.`,	
         extraText: "O jogo consta com 2 versões. A primeira foi desenvolvida em 2019, por Alexander Henrique, o criador da ideia. Esta versão que você pode ver agora é a 2°Edição do game, contando com uma remodelagem completa por parte do designer Uriel Pinheiro. Juntos, os dois desenvolveram o Lendas, um game para inspirar e apresentar desafios!",
-        extraImg: URL="imagens/dragao.png"
+        extraImg: URL="imagens/dragao.png" 
     },
     { 
         title: "Como jogar - Antes de começar", 
@@ -76,7 +76,9 @@ function changeContent(index) {
     contentBox.innerHTML = `
         <h2>${contents[index].title}</h2>
         <p>${contents[index].text}</p>
-        <img style="display:block; margin: 0 auto; width: 350px;" src="${contents[index].extraImg}" alt="Imagem extra ${index + 1}">
+        <div class="content-img">
+            <img class="img-tutorial" src="${contents[index].extraImg}" alt="Imagem extra ${index + 1}">
+        </div>
         <p>${contents[index].extraText}</p>
     `;
     contentBox.style.backgroundColor = "white";

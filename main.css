@@ -390,3 +390,87 @@ body {
         justify-content: center;
     }
 }
+
+@media (max-width: 860px){
+    #menu {
+        min-width: 100%;
+    }
+    #banner {
+        max-width: 100%;
+    }
+    .img-p {
+        max-width: 100%;
+    }
+    .logo-button img {
+        width: 200px;
+        margin: 0 auto;
+    }
+    .logo-button a button {
+        font-size: 15px;
+    }
+    .logo-button {
+        top: 15%;
+    }
+    .c-principal h2 {
+        font-size: 35px;
+    }
+    .c-principal p {
+        font-size: 25px;
+    }
+    .ci-principal img {
+        width: 210px;
+        padding-right: 20px;
+    }
+    .l-principal {
+        height: 280px;
+    }
+    .cards {
+        clip-path: none;
+    }
+    .heroi {
+        width: 200px;
+        left: -5%;
+        top: 20%;
+    }
+    .conteudo-heroi {
+        margin: 10px 115px;
+        width: 70%;
+        min-height: 180px;
+    }
+    .conteudo-heroi p {
+        font-size: 2vw;
+    }
+    .conteudo-heroi h5 {
+        font-size: 3vw;
+    }
+    .img-habilidades {
+        width: 95px;
+        object-fit: cover;
+    }
+    .c-desenvolvedor, .c-artes {
+        text-align: center;
+        padding: 5px 0px;
+    }
+    .c-artes {
+        margin-top: 10px;
+    }
+    .c-desenvolvedor h2, .c-artes h2{
+        font-size: 20px;
+    }
+    .c-desenvolvedor h3, .c-artes h3 {
+        font-size: 15px;
+    }
+    .social-links i {
+        color: #a3a3a3;
+        font-size: 18px;
+    }
+    .s-l-d {
+        justify-content: center;
+    }
+    .c-artes .social-links {
+        justify-content: center;
+    }
+    .rodape {
+        min-height: 100%;
+    }
+}

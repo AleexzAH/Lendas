@@ -61,9 +61,11 @@ body {
     position: absolute;
     display: grid;
     grid-template-columns: 100%;
-    top: 180px;
-    left: 39%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
+    justify-content: center;
 }
 .logo-button img {
     max-width: 350px;
@@ -82,7 +84,7 @@ body {
     background-color: darkgoldenrod;
     transform: scale(1.1);
 }
-.banner {
+#banner {
     position: relative;
     height: auto;
 }
@@ -278,9 +280,9 @@ body {
         max-width: 100%;
     }
     .logo-button {
-        top: 20px;
-        left: 30%;
-        text-align: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
     .logo-button img {
         width: 150px;
@@ -413,7 +415,9 @@ body {
         font-size: 15px;
     }
     .logo-button {
-        top: 15%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
     .c-principal h2 {
         font-size: 35px;

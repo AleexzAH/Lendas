@@ -54,6 +54,7 @@ body {
 .img-p {
     max-height: 600px;
     min-width: 100%;
+    max-width: 100%;
     object-fit: cover;
 }
 .logo-button {
@@ -266,7 +267,7 @@ body {
 }
 
 /*REPOSIVIDADE */
-@media (max-width: 750px) {
+@media (max-width: 767px) {
     #banner {
         max-width: 100%;
         position: relative;
@@ -391,7 +392,10 @@ body {
     }
 }
 
-@media (max-width: 860px){
+@media (min-width: 768px) and (max-width: 1023px) {
+    body {
+        width: 100%;
+    }
     #menu {
         min-width: 100%;
     }
@@ -432,10 +436,14 @@ body {
         left: -5%;
         top: 20%;
     }
+    .c-heroi {
+        clip-path: none;
+        width: 90%;
+    }
     .conteudo-heroi {
         margin: 10px 115px;
-        width: 70%;
-        min-height: 180px;
+        width: 75%;
+        height: 450px;
     }
     .conteudo-heroi p {
         font-size: 2vw;
@@ -450,27 +458,5 @@ body {
     .c-desenvolvedor, .c-artes {
         text-align: center;
         padding: 5px 0px;
-    }
-    .c-artes {
-        margin-top: 10px;
-    }
-    .c-desenvolvedor h2, .c-artes h2{
-        font-size: 20px;
-    }
-    .c-desenvolvedor h3, .c-artes h3 {
-        font-size: 15px;
-    }
-    .social-links i {
-        color: #a3a3a3;
-        font-size: 18px;
-    }
-    .s-l-d {
-        justify-content: center;
-    }
-    .c-artes .social-links {
-        justify-content: center;
-    }
-    .rodape {
-        min-height: 100%;
     }
 }
